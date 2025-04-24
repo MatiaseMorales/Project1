@@ -10,7 +10,7 @@
     <script src="functions.js" defer></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class="nav-bar">
         <a href="index.html"
           ><img src="logos/circle.svg" alt="logo-circle"
@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section" >
       <div>
         <h1>Empower Your Business With Stunning Design!</h1>
         <p>
@@ -43,11 +43,11 @@
     </section>
 
     <section class="logos">
-      <img class="logo-img" src="logos/airbnb-logo.svg" alt="" />
-      <img class="logo-img" src="logos/google-logo.svg" alt="" />
-      <img class="logo-img" src="logos/microsoft-logo.svg" alt="" />
-      <img class="logo-img" src="logos/fedex-logo.svg" alt="" />
-      <img class="logo-img" src="logos/amazon-logo.svg" alt="" />
+      <a href="https://www.airbnb.es/"><img class="logo-img" src="logos/airbnb-logo.svg" alt="logo-airbnb" /></a>
+      <a href="https://www.google.com/"><img class="logo-img" src="logos/google-logo.svg" alt="logo-google" /></a>
+      <a href="https://www.microsoft.com/es-es"><img class="logo-img" src="logos/microsoft-logo.svg" alt="logo-microsoft" /></a>
+      <a href="https://www.fedex.com/es-es/home.html"><img class="logo-img" src="logos/fedex-logo.svg" alt="logo-fedex" /></a>
+      <a href="https://www.amazon.es/ref=nav_logo"> <img class="logo-img" src="logos/amazon-logo.svg" alt="logo-amazon" /></a>
     </section>
 
     <section class="projects" id="projects">
@@ -97,11 +97,13 @@
         />
       <div class="testimonial-profile-text">
         <p>Kristin Watson</p>
-        <a href="">Booking.com</a>
+        <a href="https://www.booking.com/">Booking.com</a>
       </div>
       </div>
     </section>
-    <section class="services" id="Services">
+
+
+    <section class="services" id="services">
       <h2>Our Services</h2>
       <div class="cards-services">
         <div class="card-services">
@@ -144,13 +146,22 @@
       <h2>Do you have any questions?</h2>
       <p>Let us help you!</p>
       
-      <input type="email" placeholder="Enter your email" />
+      <form id="subscribeForm" novalidate>
+      <input type="email" id="email" placeholder="Enter your email" />
       <button>Subscribe</button>
+      <p id="mensaje"> 
+      </p></form>
     </section>
-    <div>
-      <a href="index.html"><span class="fa fa-arrow-up btn-scroll scroll-top"></span>
+
+
+    
+      <a href="#home"><span class="fa fa-arrow-up botonArriba " id="#botonArriba" ></span>
     </a>
-      </div>
+      
+
+
+
+
     <footer class="footer">
       <div class="footer-info">
         <a href="index.html"><img src="logos/circle.svg" alt="" /></a>
