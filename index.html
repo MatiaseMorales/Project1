@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="functions.js" defer></script>
   </head>
   <body>
@@ -34,105 +36,128 @@
         <a class="hero-section-btn2" href="project.html">See our work</a>
       </div>
       <div class="hero-img-container">
-        <img class="hero-card1" src="hero-section/card-1.png" alt="" />
-        <img class="hero-card2" src="hero-section/card-2.png" alt="" />
+        <img class="hero-card-top" src="hero-section/card-1.png" alt="" />
+        <img class="hero-card-bottom" src="hero-section/card-2.png" alt="" />
         <img class="hero-img" src="hero-section/hero-image.png" alt="" />
       </div>
     </section>
 
     <section class="logos">
-      <img src="logos/airbnb-logo.svg" alt="" />
-      <img src="logos/google-logo.svg" alt="" />
-      <img src="logos/microsoft-logo.svg" alt="" />
-      <img src="logos/fedex-logo.svg" alt="" />
-      <img src="logos/amazon-logo.svg" alt="" />
+      <img class="logo-img" src="logos/airbnb-logo.svg" alt="" />
+      <img class="logo-img" src="logos/google-logo.svg" alt="" />
+      <img class="logo-img" src="logos/microsoft-logo.svg" alt="" />
+      <img class="logo-img" src="logos/fedex-logo.svg" alt="" />
+      <img class="logo-img" src="logos/amazon-logo.svg" alt="" />
     </section>
 
     <section class="projects" id="projects">
       <h2>Recent projects</h2>
 
-      <div class="cards"> 
-        
+      <div class="cards">
         <div class="card">
           <img src="projects-section/1.jpg" alt="" />
-          <h3>Simplify</h3>
+          <h4>Simplify</h4>
           <p>UI Design & App Development</p>
-          <a href="">Learn more</a>
+          <a class="learn-more" href="">Learn more</a>
         </div>
         <div class="card">
           <img src="projects-section/2.jpg" alt="" />
-          <h3>Dashcoin</h3>
+          <h4>Dashcoin</h4>
           <p>Web Development</p>
-          <a href="">Learn more</a>
+          <a class="learn-more" href="">Learn more</a>
         </div>
         <div class="card">
           <img src="projects-section/3.jpg" alt="" />
-          <h3>Vectorify</h3>
+          <h4>Vectorify</h4>
           <p>User Experience Design</p>
-          <a href="">Learn more</a>
+          <a class="learn-more" href="">Learn more</a>
         </div>
       </div>
     </section>
 
-    <section>
-      <h2>Hear What Our Clients Have to Say</h2>
-      <p>
-        “Circle helped us through every stage of our startup. We really enjoyed
-        working with you.”
-      </p>
-      <img src="testimonial-section/memoji-1.png" alt="" />
-      <img src="testimonial-section/memoji-2.png" alt="" />
-      <img src="testimonial-section/memoji-3.png" alt="" />
-      <img src="testimonial-section/memoji-4.png" alt="" />
-      <img src="testimonial-section/profile.png" alt="" />
-      <h4>Kristin Watson</h4>
-      <a href="">Booking.com</a>
+    <section class="testimonial" id="testimonial">
+      <div class="testimonial-text">
+        <h3>Hear What Our Clients Have to Say</h3>
+        <p>
+          “Circle helped us through every stage of our startup. We really
+          enjoyed working with you.”
+        </p>
+      </div>
+      <div class="testimonial-memoji-container">
+        <img class="memoji1" src="testimonial-section/memoji-1.png" alt="" />
+        <img class="memoji2" src="testimonial-section/memoji-2.png" alt="" />
+        <img class="memoji3" src="testimonial-section/memoji-3.png" alt="" />
+        <img class="memoji4" src="testimonial-section/memoji-4.png" alt="" />
+      </div>
+      <div class="testimonial-profile">
+        <img
+          
+          src="testimonial-section/profile.png"
+          alt=""
+        />
+      <div class="testimonial-profile-text">
+        <p>Kristin Watson</p>
+        <a href="">Booking.com</a>
+      </div>
+      </div>
     </section>
-    <section id="Services">
+    <section class="services" id="Services">
       <h2>Our Services</h2>
-      <div>
-        <img src="" alt="" />
-        <h3>User Interface Design</h3>
-        <p>
-          Circle provides you with a stunning user interface design that is
-          accessible to everyone.
-        </p>
-        <a href="">Learn more</a>
+      <div class="cards-services">
+        <div class="card-services">
+          <div class="card-services-img-background">
+            <img src="services-section/icons/1.svg" alt="" />
+          </div>
+          <h4>User Interface Design</h4>
+          <p>
+            Circle provides you with a stunning user interface design that is
+            accessible to everyone. 
+          </p>
+          <a class="learn-more-services" href="">Learn more</a>
+        </div>
+        <div class="card-services">
+          <div class="card-services-img-background">
+            <img src="services-section/icons/2.svg" alt="" />
+          </div>
+          <h4>User Experience Design</h4>
+          <p>
+            Circle always focuses on delivering the best user experience to your
+            customers. <br><br>
+          </p>
+          <a class="learn-more-services" href="">Learn more</a>
+        </div>
+        <div class="card-services">
+          <div class="card-services-img-background">
+            <img src="services-section/icons/3.svg" alt="" />
+          </div>
+          <h4>Application Development</h4>
+          <p>
+            We develop high-quality mobile and web applications using the latest
+            technology stack.
+          </p>
+          <a class="learn-more-services" href="">Learn more</a>
+        </div>
       </div>
-      <div>
-        <img src="" alt="" />
-        <h3>User Experience Design</h3>
-        <p>
-          Circle always focuses on delivering the best user experience to your
-          customers.
-        </p>
-        <a href="">Learn more</a>
-      </div>
-      <div>
-        <img src="" alt="" />
-        <h3>Application Development</h3>
-        <p>
-          We develop high-quality mobile and web applications using the latest
-          technology stack.
-        </p>
-        <a href="">Learn more</a>
-      </div>
-    </section>
-    <section>
-      <h2>Do you have any questions?</h2>
-      <p>Let us help you!</p>
-      <img src="newsletter/icon/mail.svg" alt="" />
-      <form action="">Enter your email</form>
-      <button>Subscribe</button>
     </section>
 
-    <footer>
-      <div>
-        <img src="logos/circle.svg" alt="" />
+    <section class="newsletter">
+      <h2>Do you have any questions?</h2>
+      <p>Let us help you!</p>
+      
+      <input type="email" placeholder="Enter your email" />
+      <button>Subscribe</button>
+    </section>
+    <div>
+      <a href="index.html"><span class="fa fa-arrow-up btn-scroll scroll-top"></span>
+    </a>
+      </div>
+    <footer class="footer">
+      <div class="footer-info">
+        <a href="index.html"><img src="logos/circle.svg" alt="" /></a>
         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
       </div>
       <div>
-        <ul>
+        <ul class="footer-list">
           <li><a href="">Team</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">About Us</a></li>
@@ -140,9 +165,6 @@
           <li><a href="">Projects</a></li>
           <li><a href="">Privacy Policy</a></li>
         </ul>
-      </div>
-      <div>
-        <img src="" alt="" />
       </div>
     </footer>
   </body>
