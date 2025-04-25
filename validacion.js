@@ -1,22 +1,8 @@
-//Funcion de flecha hacia arriba
+//funcion de validacion mail//
 
-function irArriba() {
-  window.addEventListener("scroll", () => {
-    var scroll = document.documentElement.scrollTop;
 
-    var botonArriba = document.getElementsByClassName("botonArriba");
 
-    if (scroll > 700) {
-      botonArriba[0].style.right = "20px";
-    } else {
-      botonArriba[0].style.right = "-100px";
-    }
-  });
-}
 
-irArriba();
-
-//funcion de validacion mail
 
 const email = document.getElementById("email");
 const form = document.getElementById("subscribeForm");
@@ -41,3 +27,5 @@ form.addEventListener("submit", (e) => {
     }, 3000);
   }
 });
+
+

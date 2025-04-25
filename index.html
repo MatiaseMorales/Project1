@@ -7,23 +7,13 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="functions.js" defer></script>
+        <script src="/index.js" defer></script>
+    <script src="/scroll.js" defer></script>
+    <script src="/validacion.js" defer></script>
+    
   </head>
   <body>
-    <header class="header" id="home">
-      <nav class="nav-bar">
-        <a href="index.html"
-          ><img src="logos/circle.svg" alt="logo-circle"
-        /></a>
-
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="/#projects">Project</a></li>
-          <li><a href="/#services">Services</a></li>
-        </ul>
-        <a class="contact-btn" href="contact.html">Contact us</a>
-      </nav>
-    </header>
+    <div id="header"></div>
 
     <section class="hero-section" >
       <div>
@@ -142,16 +132,7 @@
       </div>
     </section>
 
-    <section class="newsletter">
-      <h2>Do you have any questions?</h2>
-      <p>Let us help you!</p>
-      
-      <form id="subscribeForm" novalidate>
-      <input type="email" id="email" placeholder="Enter your email" />
-      <button>Subscribe</button>
-      <p id="mensaje"> 
-      </p></form>
-    </section>
+   <div id="newsletter"></div>
 
 
     
@@ -161,22 +142,6 @@
 
 
 
-
-    <footer class="footer">
-      <div class="footer-info">
-        <a href="index.html"><img src="logos/circle.svg" alt="" /></a>
-        <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-      </div>
-      <div>
-        <ul class="footer-list">
-          <li><a href="">Team</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Press</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </footer>
+<div id="footer"></div>
   </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/index.js" defer></script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <form class="contact-form" action="">
+        <label for="name">Full name*</label>
+        <input
+          class="input-contact input-contact-name"
+          type="text"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        />
+        <div class="input-contact-email-phone">
+          <div class="input-contact-email">
+            <label for="email">Email</label>
+            <input
+              class="input-contact"
+              type="email"
+              id="email"
+              placeholder="Enter your email adress"
+              required
+            />
+          </div>
+          <div class="input-contact-phone">
+            <label for="phone">Phone</label>
+            <input
+              class="input-contact"
+              type="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+        </div>
+        <label for="text">Message</label>
+        <textarea class="input-contact input-contact-message"
+          id="message"
+          placeholder="Enter your message here"
+          required
+        ></textarea>
+        <button>Submit</button>
+      </form>
+    </section>
+
+    <div id="footer"></div>
+  </body>
+</html>
