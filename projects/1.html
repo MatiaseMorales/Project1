@@ -4,15 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="/index.js" defer></script>
-    <script src="/validacion.js" defer></script>
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div id="header"></div>
 
-    <div id="newsletter"></div>
+    <div id="proyecto-principal" class="proyecto-principal">
+      <div class="info-general">
+        <h1 id="nombre-proyecto"></h1>
+        <div class="info-principal">
+          <p id="descripcion-proyecto"></p>
+        </div>
+        <div class="info-completado" id="completado-proyecto"></div>
+      </div>
+      <div class="imagen">
+        <img id="imagen-proyecto" alt="Imagen del Proyecto" />
+      </div>
+      <div class="contenido" id="contenido-proyecto"></div>
+    </div>
 
+    <div class="otros-proyectos">
+      <h2>Other projects</h2>
+      <div id="otros-proyectos"></div>
+    </div>
+
+    <div id="newsletter"></div>
     <div id="footer"></div>
+
+    <script src="/validacion.js"></script>
+    <script src="projects.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

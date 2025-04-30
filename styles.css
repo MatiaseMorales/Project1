@@ -66,7 +66,6 @@ h4 {
   font-size: 17px medium;
   font-family: var(--roboto);
   font-weight: bold;
-  
 }
 
 .nav-list a:hover {
@@ -494,7 +493,7 @@ h4 {
   font-size: 17px medium;
 }
 
-.footer-info p{
+.footer-info p {
   margin-top: 10px;
   width: 250px;
 }
@@ -540,63 +539,28 @@ h4 {
   margin-top: 10px;
 }
 
-/*Contacto*/
+/*Responsive*/
 
-.contact-section {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 100px;
+/* Móviles grandes */
+@media (min-width: 481px) {
+  body {
+    font-size: 17px;
+  }
 }
 
-.contact-section h1 {
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-contact {
-  padding: 15px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  border: none;
-  background-color: rgba(111, 115, 139, 0.1);
-  width: 100%;
+/* Tablets */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
 
-.input-contact-name {
-}
-
-.input-contact-email-phone {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
-}
-
-.input-contact-email {
-  width: 48%;
-}
-
-.input-contact-phone {
-  width: 48%;
-}
-
-.input-contact-message {
-  height: 120px;
-}
-
-.contact-form button {
-  padding: 15px 20px 15px 20px;
-  border: none;
-  background-color: var(--primary-color);
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact-form button:hover {
-  background-color: #A2D6F9;
-  color: var(--letter1);
-  transition: all 0.1s ease-in-out;
+/* Laptops */
+@media (min-width: 1025px) {
+  body {
+    font-size: 19px;
+    max-width: 80%;
+  }
 }

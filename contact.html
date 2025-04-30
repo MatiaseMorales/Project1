@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css" />
-    <script src="/index.js" defer></script>
+    <link rel="stylesheet" href="/contact.css" />
   </head>
   <body>
     <div id="header"></div>
 
     <section class="contact-section">
       <h1>Contact Us</h1>
-      <form class="contact-form" action="">
+      <form class="contact-form" action="" novalidate>
         <label for="name">Full name*</label>
         <input
           class="input-contact input-contact-name"
@@ -21,6 +20,7 @@
           placeholder="Enter your full name"
           required
         />
+        <div class="error-container"></div>
         <div class="input-contact-email-phone">
           <div class="input-contact-email">
             <label for="email">Email</label>
@@ -31,6 +31,7 @@
               placeholder="Enter your email adress"
               required
             />
+            <div class="error-container"></div>
           </div>
           <div class="input-contact-phone">
             <label for="phone">Phone</label>
@@ -41,18 +42,26 @@
               placeholder="Enter your phone number"
               required
             />
+            <div class="error-container"></div>
           </div>
         </div>
-        <label for="text">Message</label>
-        <textarea class="input-contact input-contact-message"
-          id="message"
-          placeholder="Enter your message here"
-          required
-        ></textarea>
+        <div>
+          <label for="text">Message</label>
+          <textarea
+            class="input-contact input-contact-message"
+            id="message"
+            placeholder="Write your message here...."
+            required
+          ></textarea>
+          <div class="error-container"></div>
+        </div>
         <button>Submit</button>
       </form>
     </section>
 
     <div id="footer"></div>
+
+    <script src="/index.js"></script>
+    <script src="/validacion-contacto.js"></script>
   </body>
 </html>

@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #072ac8;
+  --letter1: #292e47;
+  --letter2: #6b708d;
+  --background-color-1: #f2f4fc;
+  --background-color-2: #ffc600;
+  --roboto: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para el Proyecto Principal */
+.proyecto-principal {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.info-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.info-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-principal h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  width: 30%;
+}
+
+.info-completado {
+  width: 40%;
+}
+
+.info-principal p {
+  font-size: 16px;
+  color: var(--letter2);
+}
+
+.info-completado {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.imagen img {
+  text-align: center;
+  margin-top: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.contenido {
+  margin-top: 20px;
+  font-size: 17px;
+  color: var(--letter2);
+}
+
+/* Estilo para los Otros Proyectos */
+
+.otros-proyectos {
+  width: 90%;
+  margin: auto;
+}
+#otros-proyectos {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+
+.otro-proyecto img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.otro-proyecto p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+
+/* 
+@media (max-width: 1200px) {
+  .otro-proyecto {
+    width: 45%; /* Dos tarjetas por fila en pantallas medianas 
+  }
+}
+
+@media (max-width: 768px) {
+  .otro-proyecto {
+    width: 100%; /* Una tarjeta por fila en pantallas pequeñas 
+  }
+}
+ */
+
+/* Móviles grandes */
+@media (max-width: 767px) {
+  body {
+  }
+
+  .info-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-completado {
+    text-align: center;
+  }
+
+  .info-general h1 {
+    width: 100%;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+  }
+}
+
+/* Laptops */
+@media (min-width: 1024px) {
+  body {
+  }
+}
