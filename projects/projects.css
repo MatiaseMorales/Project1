@@ -110,8 +110,7 @@ body {
 
 /* Móviles grandes */
 @media (max-width: 767px) {
-  body {
-  }
+ 
 
   .info-general {
     display: flex;
