@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/styles.css" />
+    
   </head>
+  
   <body>
     <header class="header" id="home">
       <nav class="nav-bar">
         <a href="/index.html"
           ><img src="/logos/circle.svg" alt="logo-circle"
         /></a>
-
-        <ul class="nav-list">
+        <button class="burger" id="burger-menu" aria-label="Menu">
+          ☰
+        </button>
+        <ul class="nav-list" id="nav-list">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/#projects">Project</a></li>
           <li><a href="/#services">Services</a></li>
+          <li class="mobile-contact"><a class="contact-btn" href="/contact.html">Contact us</a></li>
         </ul>
-        <a class="contact-btn" href="/contact.html">Contact us</a>
+        <a class="contact-btn desktop-contact" href="/contact.html">Contact us</a>
+
       </nav>
     </header>
 
